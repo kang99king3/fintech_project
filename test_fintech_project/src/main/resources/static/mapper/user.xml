@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.example.fintech.mapper.UserMapper">
+ 
+ 	<insert id="addUser" parameterType="FintechUserDto">
+ 		INSERT INTO FINTECH_USER 
+ 		VALUES(#{userName},#{userEmail},#{userPassword},#{userAccessToken},#{userRefreshToken},#{userSeqNo})
+ 	</insert>
+ 	<select id="login" parameterType="FintechUserDto" resultType="FintechUserDto">
+ 		SELECT *
+ 		FROM FINTECH_USER 
+ 		WHERE USEREMAIL=#{userEmail} AND USERPASSWORD=#{userPassword}
+ 	</select>
+</mapper>
