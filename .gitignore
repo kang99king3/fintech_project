@@ -86,3 +86,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/java,maven,web,windows
+/토큰.txt
+/토큰캡처.JPG
