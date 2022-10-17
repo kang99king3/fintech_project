@@ -48,11 +48,11 @@ buildNumber.properties
 *.asp
 *.cer
 *.csr
-*.css
+# *.css
 *.htm
-*.html
-*.js
-*.jsp
+# *.html
+# *.js
+# *.jsp
 *.php
 *.rss
 *.wasm
