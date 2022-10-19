@@ -94,7 +94,7 @@ public class FintechController {
 		System.out.println("refresh_token:"+refresh_token);
 		System.out.println("user_seq_no:"+user_seq_no);
 		
-		//클라이언트로 전달하기 위해 model에 저장
+		//클라이언트로 전달하기 위해 model에 저장---->나중에는 세션에 저장하자
 		model.addAttribute("access_token", access_token);
 		model.addAttribute("refresh_token", refresh_token);
 		model.addAttribute("user_seq_no", user_seq_no);

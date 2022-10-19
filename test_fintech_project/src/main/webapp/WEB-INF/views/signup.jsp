@@ -18,6 +18,7 @@
 <script type="text/javascript">
 	
 	function authorization(){
+		
 		var url="https://testapi.openbanking.or.kr/oauth/2.0/authorize?"
 				+"response_type=code&"
 				+"client_id=4987e938-f84b-4e23-b0a2-3b15b00f4ffd&"
@@ -62,41 +63,42 @@
             <div class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
+                    <br/><br/>
                        <form action="/adduser" method="post">
-							<table border="1" class="table">
+							<table  class="table">
 								<tr>
 									<th>이름</th>
-									<td><input type="text" name="userName"/></td>
+									<td><input type="text" class="form-control" name="userName"/></td>
 								</tr>
 								<tr>
 									<th>이메일</th>
-									<td><input type="email" name="userEmail"/></td>
+									<td><input type="email" class="form-control" name="userEmail"/></td>
 								</tr>
 								<tr>
 									<th>비밀번호</th>
-									<td><input type="password" name="userPassword"/></td>
+									<td><input type="password" class="form-control" name="userPassword"/></td>
 								</tr>
 								<tr>
 									<th>accessToken</th>
-									<td><input type="text" name="userAccessToken"/></td>
+									<td><input type="text" class="form-control" name="userAccessToken"/></td>
 								</tr>
 								<tr>
 									<th>refreshToken</th>
-									<td><input type="text" name="userRefreshToken"/></td>
+									<td><input type="text" class="form-control" name="userRefreshToken"/></td>
 								</tr>
 								<tr>
 									<th>userSeqNo</th>
-									<td><input type="text" name="userSeqNo"/></td>
+									<td><input type="text" class="form-control" name="userSeqNo"/></td>
 								</tr>
 								<tr>
 									<td colspan="2">
-										<button type="button" onclick="authorization()">인증하기</button>
-										<input type="submit" value="가입하기"/>
+										<button type="button" class="btn btn-dark" onclick="authorization()">인증하기</button>
+										<input type="submit" class="btn btn-dark" value="가입하기"/>
 									</td>
 								</tr>
 							</table>
 						</form>
-						<br/><br/><br/><br/><br/><br/><br/>
+						<br/><br/><br/>
                     </div>
                 </div>
             </div>
