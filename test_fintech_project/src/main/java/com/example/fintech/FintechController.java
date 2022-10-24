@@ -273,7 +273,7 @@ public class FintechController {
 		return result;
 	}
 	
-	//잔액조회
+	//거래내역조회
 	@GetMapping("/transactionList")
 	@ResponseBody
 	public JSONObject transactionList(String fintech_use_num,String bank_tran_id, Model model, HttpServletRequest request) throws IOException, ParseException {
